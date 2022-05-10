@@ -10,8 +10,7 @@ function App() {
         
 
         <Welcome name="i am learning React"></Welcome>   
-        <Welcome name="i am learning React"></Welcome> 
-        <Welcome name="i am learning React"></Welcome>        
+              
     </div>
   );
 }
