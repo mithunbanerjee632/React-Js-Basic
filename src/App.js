@@ -10,7 +10,9 @@ function App() {
         <Hello age="27" name="kumar"></Hello>  
         <Hello age="27" name="Banerjee"></Hello>  
 
-        <Welcome></Welcome>          
+        <Welcome name="i am learning React"></Welcome>   
+        <Welcome name="i am learning React"></Welcome> 
+        <Welcome name="i am learning React"></Welcome>        
     </div>
   );
 }
