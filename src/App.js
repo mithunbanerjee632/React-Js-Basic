@@ -6,7 +6,10 @@ import Welcome from './mycomponents/Welcome.js';
 function App() {
   return (
     <div className="App">
-        <Hello></Hello>    
+        <Hello age="27" name="Mithun"></Hello>    
+        <Hello age="27" name="kumar"></Hello>  
+        <Hello age="27" name="Banerjee"></Hello>  
+
         <Welcome></Welcome>          
     </div>
   );
