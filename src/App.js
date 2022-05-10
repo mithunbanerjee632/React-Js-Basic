@@ -3,10 +3,11 @@ import './App.css';
 import Hello from './mycomponents/Hello.js';
 import Welcome from './mycomponents/Welcome.js';
 import Myfun from './mycomponents/Myfun';
+import Arrow from './mycomponents/Arrow';
 
 function App() {
   return (
-       <Myfun></Myfun>
+       <Arrow></Arrow>
   );
 }
 
