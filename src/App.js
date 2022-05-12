@@ -14,6 +14,7 @@ import States from './mycomponents/States';
 import MyDemo from './ReactDom/MyDemo.js';
 import MyDemo1 from './ReactDom/MyDemo1.js';
 import Form1 from './Form/Form1.js'
+import Signup from './Form/Signup';
 
 function App() {
  
@@ -21,7 +22,7 @@ function App() {
       <div className="App">
 
       
-     <Form1></Form1>
+    <Signup></Signup>
        </div>
   );
  
