@@ -18,14 +18,14 @@ import Signup from './Form/Signup';
 import TextArea from './Form/TextArea';
 import Select from './Form/Select';
 import List from './Form/List';
+import JsonList from './Form/JsonList';
 
 function App() {
  
     return (
       <div className="App">
 
-      
-   <List/>
+           <JsonList/>
        </div>
   );
  
