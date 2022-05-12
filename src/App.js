@@ -17,6 +17,7 @@ import Form1 from './Form/Form1.js'
 import Signup from './Form/Signup';
 import TextArea from './Form/TextArea';
 import Select from './Form/Select';
+import List from './Form/List';
 
 function App() {
  
@@ -24,7 +25,7 @@ function App() {
       <div className="App">
 
       
-   <Select/>
+   <List/>
        </div>
   );
  
