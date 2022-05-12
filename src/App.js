@@ -6,6 +6,7 @@ import Myfun from './mycomponents/Myfun';
 import Arrow from './mycomponents/Arrow';
 import SetState from './mycomponents/SetState';
 import Condition1 from './mycomponents/Condition1.js';
+import Condition2 from './mycomponents/Condition2.js';
 
 
 import States from './mycomponents/States';
@@ -16,7 +17,7 @@ function App() {
       <div className="App">
 
       
-       <Condition1></Condition1>
+       <Condition2></Condition2>
 
        </div>
   );
