@@ -13,6 +13,7 @@ import Refresh from './mycomponents/Refresh.js';
 import States from './mycomponents/States';
 import MyDemo from './ReactDom/MyDemo.js';
 import MyDemo1 from './ReactDom/MyDemo1.js';
+import Form1 from './Form/Form1.js'
 
 function App() {
  
@@ -20,7 +21,7 @@ function App() {
       <div className="App">
 
       
-      <MyDemo1></MyDemo1>
+     <Form1></Form1>
        </div>
   );
  
