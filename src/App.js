@@ -11,6 +11,7 @@ import Refresh from './mycomponents/Refresh.js';
 
 
 import States from './mycomponents/States';
+import MyDemo from './ReactDom/MyDemo.js';
 
 function App() {
  
@@ -18,7 +19,7 @@ function App() {
       <div className="App">
 
       
-      <Refresh></Refresh>
+      <MyDemo></MyDemo>
        </div>
   );
  
