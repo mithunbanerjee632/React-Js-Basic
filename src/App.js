@@ -16,6 +16,7 @@ import MyDemo1 from './ReactDom/MyDemo1.js';
 import Form1 from './Form/Form1.js'
 import Signup from './Form/Signup';
 import TextArea from './Form/TextArea';
+import Select from './Form/Select';
 
 function App() {
  
@@ -23,7 +24,7 @@ function App() {
       <div className="App">
 
       
-   <TextArea/>
+   <Select/>
        </div>
   );
  
