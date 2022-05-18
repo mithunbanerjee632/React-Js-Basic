@@ -7,6 +7,15 @@ class JsonList extends Component {
       {
         "city":"Dhaka",
         "zip":"1204"
+      },
+      
+      {
+        "city":"Barishal",
+        "zip":"8240"
+      },
+      {
+        "city":"Sylhet",
+        "zip":"5000"
       }
 
     ];
