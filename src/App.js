@@ -23,31 +23,14 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import { Routes, Route, Link } from "react-router-dom";
 import Portfolio from './pages/Portfolio';
+import CountryList from "./CountryList";
 
 function App() {
  
     return (
       <div className="App">
   
-      <div>
-                  <ul>
-                     <Link to="/">Home</Link>
-                     <Link to="/about">About</Link>
-                     <Link to="/contact">Contact</Link>
-                     <Link to="/portfolio">Portfolio</Link>
-                   </ul>
-                   </div> 
-    
-      
-                 
-                   <Routes>
-                   
-                      <Route path="/about" element={<About/>} />
-                      <Route path="/contact" element={<Contact/>} />
-                      <Route path="/portfolio" element={<Portfolio/>} />
-                    
-                 
-                 </Routes>
+              <CountryList/>
        </div>
   );
  
