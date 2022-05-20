@@ -24,13 +24,14 @@ import Contact from './pages/Contact';
 import { Routes, Route, Link } from "react-router-dom";
 import Portfolio from './pages/Portfolio';
 import CountryList from "./CountryList";
+import Post from "./Post";
 
 function App() {
  
     return (
       <div className="App">
   
-              <CountryList/>
+              <Post/>
        </div>
   );
  
