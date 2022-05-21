@@ -25,13 +25,14 @@ import { Routes, Route, Link } from "react-router-dom";
 import Portfolio from './pages/Portfolio';
 import CountryList from "./CountryList";
 import Post from "./Post";
+import Table from "./Table";
 
 function App() {
  
     return (
       <div className="App">
   
-              <Post/>
+              <Table/>
        </div>
   );
  
