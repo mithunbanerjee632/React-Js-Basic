@@ -3,29 +3,32 @@ import style from './form.module.css';
 
 const Registration = () => {
 
-    const [name,setName] = useState(" ")
-    const [email,setEmail] = useState(" ")
-    const [password,setPassword] = useState(" ")
 
-    const handleNameChange=(e)=>{
-       setName(e.target.value)
-    };
-    const handleEmailChange=(e)=>{
-        setEmail(e.target.value)
-    };
-    const handlePassChange=(e)=>{
-        setPassword(e.target.value);
-    };
+
+    const [user,setUser]=useState({
+        name:' ',
+        email:' ',
+        password:' '
+    });
+
+    const {name,email,password} = user  //user theke name,email and password ber kore nici
+
+    const handleChange=(event)=>{
+        const fieldName = event.target.name;
+
+        if(fieldName === 'name'){
+            setUser({name: event.target.value,email,password})
+        }else if(fieldName==='email'){
+            setUser({name,email: event.target.value,password})
+        }else if(fieldName==='password'){
+            setUser({name,email,password: event.target.value})
+        }
+    }
 
     const handleSubmit=(e)=>{
         console.log("form is submitted");
 
-        let userInfo = {
-            name:name,
-            email:email,
-            password:password
-        }
-        console.log(userInfo);
+        console.log(user);
         e.preventDefault();
     }
     return (
@@ -35,17 +38,17 @@ const Registration = () => {
 
                 <div className={style.formGroup}>
                     <label htmlFor="name">Name: </label>
-                    <input type="text" name="name" id="name" onChange={handleNameChange} value={name} required/>
+                    <input type="text" name="name" id="name" onChange={handleChange} value={name} required/>
                 </div>
 
                 <div className={style.formGroup}>
                     <label htmlFor="email">Email: </label>
-                    <input type="email" name="email" id="email" onChange={handleEmailChange} value={email} required/>
+                    <input type="email" name="email" id="email" onChange={handleChange} value={email} required/>
                 </div>
 
                 <div className={style.formGroup}>
                     <label htmlFor="password">Password: </label>
-                    <input type="password" name="password" id="password" onChange={handlePassChange} value={password} required/>
+                    <input type="password" name="password" id="password" onChange={handleChange} value={password} required/>
                 </div>
 
                 <button type="submit">Register</button>
