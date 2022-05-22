@@ -7,10 +7,10 @@ class Mynavigation extends Component {
         return (
             <div>
                 <ul>
-                    <li><NavLink exact activeStyle={{color:"green"}} to="/">Home</NavLink></li>
-                    <li><NavLink exact activeStyle={{color:"green"}} to="/about">About</NavLink></li>
-                    <li><NavLink exact activeStyle={{color:"green"}} to="contact/">Contact</NavLink></li>
-                    <li><NavLink exact activeStyle={{color:"green"}} to="/portfolio">Portfolio</NavLink></li>
+                    <li><NavLink  activestyle={{color:"green"}} to="/">Home</NavLink></li>
+                    <li><NavLink  activestyle={{color:"green"}} to="/about">About</NavLink></li>
+                    <li><NavLink  activestyle={{color:"green"}} to="contact/">Contact</NavLink></li>
+                    <li><NavLink  activestyle={{color:"green"}} to="/portfolio">Portfolio</NavLink></li>
                 </ul>
             </div>
         );

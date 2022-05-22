@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Notfound from "./pages/Notfound";
+import Login from "./pages/Login";
 
 
 class Myroute extends Component {
@@ -13,11 +14,12 @@ class Myroute extends Component {
             <div>
 
                 <Routes>
-                <Route exact path="/" element={<Home/>}/>
-                <Route  exact path="/about" element={<About/>}/>
-                <Route  exact path="/contact" element={<Contact/>}/>
-                <Route exact  path="/portfolio" element={<Portfolio/>}/>
-                <Route  path="*" element={<Notfound/>}/>
+                    <Route exact path="/" element={<Home/>}/>
+                    <Route exact path="/login" element={<Login/>}/>
+                    <Route  exact path="/about" element={<About/>}/>
+                    <Route  exact path="/contact" element={<Contact/>}/>
+                    <Route exact  path="/portfolio/:username" element={<Portfolio/>}/>
+                    <Route  path="*" element={<Notfound/>}/>
                 </Routes>
 
             </div>
