@@ -8,6 +8,7 @@ import Mynavigation from "./AdvanceRouting/Mynavigation";
 import State from "./Hook/State";
 import Registration from "./Form/Registration";
 import Child from "./StateLifting/Child";
+import Home from "./StateLifting/Home";
 function App() {
    const data = "i am from parent app"
 
@@ -18,7 +19,7 @@ function App() {
     return (
       <div className="App">
 
-         <Child data={data} onChildData={handleChildData}/>
+       <Home/>
 
           {/*<BrowserRouter>
               <Mynavigation/>
