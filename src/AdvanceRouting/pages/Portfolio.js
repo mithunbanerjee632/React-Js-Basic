@@ -1,20 +1,21 @@
 import React, {Component} from 'react';
+import {Navigate} from "react-router-dom";
 
 class Portfolio extends Component {
-     constructor({id = window.location.href.split('/username')}) {
-         super();
-         this.state={
-             myName:id
-         }
-     }
+
 
     render() {
-        return (
-            <div>
+        if(sessionStorage.getItem("username") == null){
+            return <Navigate to="/login"/>
+        }else{
+            return (
+                <div>
 
-                <h1>{this.state.myName}</h1>
-            </div>
-        );
+                    <h1>Portfolio</h1>
+                </div>
+            );
+        }
+
     }
 }
 

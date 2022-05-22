@@ -5,6 +5,10 @@ class Login extends Component {
         sessionStorage.setItem("username","mithun");
     }
 
+    logout=()=>{
+        sessionStorage.clear();
+    }
+
 
 
 
@@ -14,6 +18,7 @@ class Login extends Component {
         return (
             <div>
                 <button onClick={this.login}>Login</button>
+                <button onClick={this.logout}>Logout</button>
             </div>
         );
     }

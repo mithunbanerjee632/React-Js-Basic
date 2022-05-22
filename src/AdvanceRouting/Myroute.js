@@ -18,7 +18,7 @@ class Myroute extends Component {
                     <Route exact path="/login" element={<Login/>}/>
                     <Route  exact path="/about" element={<About/>}/>
                     <Route  exact path="/contact" element={<Contact/>}/>
-                    <Route exact  path="/portfolio/:username" element={<Portfolio/>}/>
+                    <Route exact  path="/portfolio" element={<Portfolio/>}/>
                     <Route  path="*" element={<Notfound/>}/>
                 </Routes>
 
