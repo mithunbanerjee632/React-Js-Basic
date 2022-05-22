@@ -14,7 +14,10 @@ const Registration = () => {
     const {name,email,password} = user  //user theke name,email and password ber kore nici
 
     const handleChange=(event)=>{
-        const fieldName = event.target.name;
+
+        setUser({...user,[event.target.name]:event.target.value})
+
+       /* const fieldName = event.target.name;
 
         if(fieldName === 'name'){
             setUser({name: event.target.value,email,password})
@@ -22,7 +25,7 @@ const Registration = () => {
             setUser({name,email: event.target.value,password})
         }else if(fieldName==='password'){
             setUser({name,email,password: event.target.value})
-        }
+        }*/
     }
 
     const handleSubmit=(e)=>{
