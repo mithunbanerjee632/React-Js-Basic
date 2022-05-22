@@ -6,12 +6,13 @@ import {BrowserRouter} from "react-router-dom";
 import Myroute from "./AdvanceRouting/Myroute";
 import Mynavigation from "./AdvanceRouting/Mynavigation";
 import State from "./Hook/State";
+import Registration from "./Form/Registration";
 function App() {
  
     return (
       <div className="App">
 
-          <State></State>
+          <Registration></Registration>
 
           {/*<BrowserRouter>
               <Mynavigation/>
