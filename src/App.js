@@ -5,15 +5,18 @@ import {BrowserRouter} from "react-router-dom";
 
 import Myroute from "./AdvanceRouting/Myroute";
 import Mynavigation from "./AdvanceRouting/Mynavigation";
+import State from "./Hook/State";
 function App() {
  
     return (
       <div className="App">
 
-          <BrowserRouter>
+          <State></State>
+
+          {/*<BrowserRouter>
               <Mynavigation/>
               <Myroute/>
-          </BrowserRouter>
+          </BrowserRouter>*/}
 
 
        </div>
