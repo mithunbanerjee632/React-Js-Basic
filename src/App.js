@@ -9,6 +9,7 @@ import State from "./Hook/State";
 import Registration from "./Form/Registration";
 import Child from "./StateLifting/Child";
 import Home from "./StateLifting/Home";
+import Toggle from "./Toggle/Toggle";
 function App() {
    const data = "i am from parent app"
 
@@ -19,12 +20,9 @@ function App() {
     return (
       <div className="App">
 
-       <Home/>
+       <Toggle/>
 
-          {/*<BrowserRouter>
-              <Mynavigation/>
-              <Myroute/>
-          </BrowserRouter>*/}
+
 
 
        </div>
