@@ -12,13 +12,14 @@ import Home from "./StateLifting/Home";
 import Toggle from "./Toggle/Toggle";
 import Condition from "./ConditionalRendering/Condition";
 import FAQS from "./FAQ/FAQS";
+import UseEffect from "./Hook/UseEffect/UseEffect";
 function App() {
    const data = "i am from parent app"
 
     return (
       <div className="App">
 
-       <FAQS/>
+       <UseEffect/>
 
 
 
