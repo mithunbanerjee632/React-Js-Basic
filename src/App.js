@@ -11,13 +11,14 @@ import Child from "./StateLifting/Child";
 import Home from "./StateLifting/Home";
 import Toggle from "./Toggle/Toggle";
 import Condition from "./ConditionalRendering/Condition";
+import FAQS from "./FAQ/FAQS";
 function App() {
    const data = "i am from parent app"
 
     return (
       <div className="App">
 
-       <Condition/>
+       <FAQS/>
 
 
 
