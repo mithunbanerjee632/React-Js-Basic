@@ -1,10 +1,12 @@
-import React from 'react';
+import React,{Fragment} from 'react';
+
 
 const Column = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <td>Name:Mithun Banerjee</td>
+            <td>Age:25 years</td>
+        </>
     );
 };
 
