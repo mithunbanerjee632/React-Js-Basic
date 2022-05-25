@@ -20,6 +20,7 @@ import Table from "./Fragment/Table";
 import LifeCycle from "./LifeCycle/LifeCycle";
 import UserFrom from "./RefExample/UserFrom";
 import UserForm from "./Hook/UseRef/UserForm";
+import UseReducer from "./Hook/UseReducer/UseReducer";
 
 function App() {
 
@@ -27,7 +28,7 @@ function App() {
 
     return (
       <div className="App">
-           <UserForm/>
+           <UseReducer/>
 
 
 
