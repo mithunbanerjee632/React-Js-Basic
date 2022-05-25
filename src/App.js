@@ -17,6 +17,7 @@ import FetchData from "./Hook/UseEffect/FetchData"
 import Son from "./Context/Son";
 import {DadaProvider} from "./Context/Mycontext";
 import Table from "./Fragment/Table";
+import LifeCycle from "./LifeCycle/LifeCycle";
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
 
     return (
       <div className="App">
-           <Table/>
+           <LifeCycle/>
 
 
 
