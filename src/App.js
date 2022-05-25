@@ -14,7 +14,9 @@ import Condition from "./ConditionalRendering/Condition";
 import FAQS from "./FAQ/FAQS";
 import UseEffect from "./Hook/UseEffect/UseEffect";
 import FetchData from "./Hook/UseEffect/FetchData"
-import Son from "./ComponentTree/Son";
+import Son from "./Context/Son";
+import {DadaProvider} from "./Context/Mycontext";
+
 function App() {
 
    const data = "i am from parent app"
@@ -22,7 +24,11 @@ function App() {
     return (
       <div className="App">
 
-      <Son name="Puti Name is Makal fol"/>
+          <DadaProvider value="Dada Gives Biscuits to Puti">
+              <Son/>
+          </DadaProvider>
+
+
 
 
 
