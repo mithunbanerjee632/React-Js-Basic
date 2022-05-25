@@ -22,7 +22,7 @@ function App() {
     return (
       <div className="App">
 
-      <Son/>
+      <Son name="Puti Name is Makal fol"/>
 
 
 
