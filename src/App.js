@@ -13,14 +13,17 @@ import Toggle from "./Toggle/Toggle";
 import Condition from "./ConditionalRendering/Condition";
 import FAQS from "./FAQ/FAQS";
 import UseEffect from "./Hook/UseEffect/UseEffect";
-import FetchData from "./Hook/UseEffect/FetchData";
+import FetchData from "./Hook/UseEffect/FetchData"
+import Son from "./ComponentTree/Son";
 function App() {
+
    const data = "i am from parent app"
 
     return (
       <div className="App">
 
-       <FetchData/>
+      <Son/>
+
 
 
 
