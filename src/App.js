@@ -1,28 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
-import Myroute from "./AdvanceRouting/Myroute";
-import Mynavigation from "./AdvanceRouting/Mynavigation";
-import State from "./Hook/State";
-import Registration from "./Form/Registration";
-import Child from "./StateLifting/Child";
-import Home from "./StateLifting/Home";
-import Toggle from "./Toggle/Toggle";
-import Condition from "./ConditionalRendering/Condition";
-import FAQS from "./FAQ/FAQS";
-import UseEffect from "./Hook/UseEffect/UseEffect";
-import FetchData from "./Hook/UseEffect/FetchData"
-import Son from "./Context/Son";
-import {DadaProvider} from "./Context/Mycontext";
-import Table from "./Fragment/Table";
-import LifeCycle from "./LifeCycle/LifeCycle";
-import UserFrom from "./RefExample/UserFrom";
-import UserForm from "./Hook/UseRef/UserForm";
-import UseReducer from "./Hook/UseReducer/UseReducer";
-import Component1 from "./Hook/UseContext/Component1";
-import Users from "./PropTypes/Users";
+
+import Error from "./Routes/pages/Error";
+import Blogs from "./Routes/pages/Blogs";
+import Contact from "./Routes/pages/Contact";
+import Home from "./Routes/pages/Home";
 
 function App() {
 
@@ -30,7 +15,14 @@ function App() {
 
     return (
       <div className="App">
-           <Users/>
+          <BrowserRouter>
+              <Routes>
+                  <Route path="/" element={<Home/>}/>
+                  <Route path="/contact" element={<Contact/>}/>
+                  <Route path="/blog" element={<Blogs/>}/>
+                  <Route path="*" element={<Error/>}/>
+              </Routes>
+          </BrowserRouter>
 
 
 
