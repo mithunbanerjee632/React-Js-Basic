@@ -21,6 +21,7 @@ import LifeCycle from "./LifeCycle/LifeCycle";
 import UserFrom from "./RefExample/UserFrom";
 import UserForm from "./Hook/UseRef/UserForm";
 import UseReducer from "./Hook/UseReducer/UseReducer";
+import Component1 from "./PropDrilling/Component1";
 
 function App() {
 
@@ -28,7 +29,7 @@ function App() {
 
     return (
       <div className="App">
-           <UseReducer/>
+           <Component1/>
 
 
 
