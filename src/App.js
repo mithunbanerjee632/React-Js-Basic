@@ -10,6 +10,7 @@ import Contact from "./Routes/pages/Contact";
 import Home from "./Routes/pages/Home";
 import Navbar from "./Routes/Navbar";
 import Blog from "./Routes/pages/Blog";
+import PrivateRoute from "./PrivateRouting/PrivateRoute";
 
 function App() {
 
@@ -17,16 +18,7 @@ function App() {
 
     return (
       <div className="App">
-          <BrowserRouter>
-              <Navbar/>
-              <Routes>
-                  <Route path="/" element={<Home />}/>
-                  <Route path="/contact" element={<Contact />}/>
-                  <Route path="/blogs" element={<Blogs />}/>
-                  <Route path="/blogs/:title" element={<Blog />}/>
-                  <Route path="*" element={<Error/>}/>
-              </Routes>
-          </BrowserRouter>
+        <PrivateRoute/>
 
 
 
