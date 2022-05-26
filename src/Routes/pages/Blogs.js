@@ -1,18 +1,36 @@
-import React from 'react';
-import { useNavigate } from "react-router-dom";
+import React, {useState} from 'react';
+import {Link, useNavigate} from "react-router-dom";
+import {blogsData} from "../data";
 
 const Blogs = () => {
-    const navigate = useNavigate();
+    const [blogs,setBlogs]=useState(blogsData);
+
+    const truncateString=(str,num)=>{
+        if(str.length>num){
+            return str.slice(0,num)+"..."
+        }else{
+            return str;
+        }
+    }
+   /* const navigate = useNavigate();*/
     return (
         <div>
             <h1>Blogs Page</h1>
-               <div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <section>
+                {blogs.map((blog)=>{
+                    const {id,title,body}=blog
+                    return <article key={id}>
+                          <h1>{title}</h1>
+                          <p>{truncateString(body,200)}</p>
+                        <Link to={title}>Learn More</Link>
+                    </article>
+                })}
+            </section>
 
-               </div>
-            <button onClick={()=>{
+
+           {/* <button onClick={()=>{
                navigate("/");
-            }}>Go to Home</button>
+            }}>Go to Home</button>*/}
         </div>
     );
 };
