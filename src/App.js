@@ -8,6 +8,7 @@ import Error from "./Routes/pages/Error";
 import Blogs from "./Routes/pages/Blogs";
 import Contact from "./Routes/pages/Contact";
 import Home from "./Routes/pages/Home";
+import Navbar from "./Routes/Navbar";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     return (
       <div className="App">
           <BrowserRouter>
+              <Navbar/>
               <Routes>
                   <Route path="/" element={<Home/>}/>
                   <Route path="/contact" element={<Contact/>}/>
