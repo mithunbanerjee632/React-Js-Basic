@@ -21,7 +21,7 @@ import LifeCycle from "./LifeCycle/LifeCycle";
 import UserFrom from "./RefExample/UserFrom";
 import UserForm from "./Hook/UseRef/UserForm";
 import UseReducer from "./Hook/UseReducer/UseReducer";
-import Component1 from "./PropDrilling/Component1";
+import Component1 from "./Hook/UseContext/Component1";
 
 function App() {
 
