@@ -22,6 +22,7 @@ import UserFrom from "./RefExample/UserFrom";
 import UserForm from "./Hook/UseRef/UserForm";
 import UseReducer from "./Hook/UseReducer/UseReducer";
 import Component1 from "./Hook/UseContext/Component1";
+import Users from "./PropTypes/Users";
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
 
     return (
       <div className="App">
-           <Component1/>
+           <Users/>
 
 
 
