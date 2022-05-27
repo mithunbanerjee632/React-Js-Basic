@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import React from "react";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 
@@ -13,17 +13,21 @@ import Blog from "./Routes/pages/Blog";
 import User from "./Routes/pages/User";
 import GETDATA from "./HttpRequest/GETDATA";
 
+import UserForm from "./HttpRequest/EditAndUpdate/UserForm";
+
 function App() {
 
-   const data = "i am from parent app"
+
+
 
     return (
       <div className="App">
 
-
+          <h1>User App Management</h1>
 
 
           <GETDATA/>
+
 
 
 
