@@ -18,7 +18,7 @@ const Getdata = () => {
                 return res.json();
             })
             .then((data)=>{
-                console.log(data.users);
+
                 setUsers(data.users);
             })
             .catch((error)=>{
@@ -33,7 +33,24 @@ const Getdata = () => {
         getAllUsers();
     },[])
 
+    //Delete
 
+    const handleDelete=(id)=>{
+        fetch(url + `/${id}`,{
+            method:'DELETE'
+        })
+        .then((res)=>{
+            if(!res.ok){
+                throw Error("Could Not Delete!")
+            }
+            getAllUsers()
+        })
+
+            .catch((error)=>{
+                setError(error.message)
+            })
+
+    }
 
     return (
         <div>
