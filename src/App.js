@@ -11,6 +11,7 @@ import Home from "./Routes/pages/Home";
 import Navbar from "./Routes/Navbar";
 import Blog from "./Routes/pages/Blog";
 import User from "./Routes/pages/User";
+import GETDATA from "./HttpRequest/GETDATA";
 
 function App() {
 
@@ -18,18 +19,32 @@ function App() {
 
     return (
       <div className="App">
-          <BrowserRouter>
-              <Navbar/>
-              <Routes>
-                  <Route path="/" element={<Home />}/>
-                  <Route path="/contact" element={<Contact />}/>
-                  <Route path="/blogs" element={<Blogs />}/>
-                  <Route path="/blogs/:title" element={<Blog />}/>
-                  <Route path="*" element={<Error/>}/>
-                  <Route path="/user" element={<User/>}/>
-                 {/* <Route path="/user/:userid" element={<User/>}/>*/}
-              </Routes>
-          </BrowserRouter>
+
+
+
+
+          <GETDATA/>
+
+
+
+
+
+
+
+
+
+          {/*<BrowserRouter>*/}
+          {/*    <Navbar/>*/}
+          {/*    <Routes>*/}
+          {/*        <Route path="/" element={<Home />}/>*/}
+          {/*        <Route path="/contact" element={<Contact />}/>*/}
+          {/*        <Route path="/blogs" element={<Blogs />}/>*/}
+          {/*        <Route path="/blogs/:title" element={<Blog />}/>*/}
+          {/*        <Route path="*" element={<Error/>}/>*/}
+          {/*        <Route path="/user" element={<User/>}/>*/}
+          {/*        <Route path="/user/:userid" element={<User/>}/>*/}
+          {/*    </Routes>*/}
+          {/*</BrowserRouter>*/}
 
 
 
